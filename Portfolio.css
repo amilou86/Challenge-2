@@ -1,0 +1,74 @@
+body {
+  background: linear-gradient(to bottom left, #ccccff 0%, #ffffff 100%);
+  font-family: 'Courier New', monospace;
+}
+
+
+
+.head {
+  color: #A9A9A9;
+  display: inline;
+  justify-content: space-around;
+  align-items: center;
+  height: 25px;
+
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 25px;
+
+}
+
+.name {
+  color: #A9A9A9;
+  display: flex;
+  justify-content: center;
+}
+
+.portfoliogrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "leftsidebar toprow toprow"
+    "leftsidebar row2col2 row2col3"
+    "leftsidebar row3col2 row3col3"
+  ;
+}
+
+.work-section {
+  grid-area: leftsidebar;
+}
+
+.work1 {
+  grid-area: toprow;
+  background-image: url("/Users/amiedwards/Dev-Bootcamp/UK-VIRT-FE-PT-11-2023-U-LOLC-1/02-css-module/04-responsive-portfolio-lesson/challenge/starter/Horiseon.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.work2 {
+  grid-area: row2col2;
+  background-image: url("/Users/amiedwards/Dev-Bootcamp/UK-VIRT-FE-PT-11-2023-U-LOLC-1/02-css-module/04-responsive-portfolio-lesson/challenge/starter/image 1.jpeg");
+
+}
+
+.work3 {
+  grid-area: row2col3;
+  background-image: url("/Users/amiedwards/Dev-Bootcamp/UK-VIRT-FE-PT-11-2023-U-LOLC-1/02-css-module/04-responsive-portfolio-lesson/challenge/starter/image-2.webp");
+
+}
+
+.work4 {
+  grid-area: row3col2;
+  background-image: url("/Users/amiedwards/Dev-Bootcamp/UK-VIRT-FE-PT-11-2023-U-LOLC-1/02-css-module/04-responsive-portfolio-lesson/challenge/starter/image3.jpeg");
+
+}
+
+.work5 {
+  grid-area: row3col3;
+  background-image: url("/Users/amiedwards/Dev-Bootcamp/UK-VIRT-FE-PT-11-2023-U-LOLC-1/02-css-module/04-responsive-portfolio-lesson/challenge/starter/image4.jpeg");
+
+}
